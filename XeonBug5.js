@@ -60,7 +60,7 @@ const ApkXeon = JSON.parse(fs.readFileSync('./database/autoreply/apk.json'))
 //time
 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
         const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+        const time2 = moment().tz('Africa/Johannesburg').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
 var xeonytimewisher = `Good Night 🌌`
  }
@@ -551,11 +551,11 @@ senddocu(buffer)
                 break
             case 'mode':
                 if (!isCreator) return replygcxeon(mess.owner)
-                if (args.length < 1) return replygcxeon(`Example ${prefix + command} public/self`)
+                if (args.length < 1) return replygcxeon(`Example ${prefix + command} public/private`)
                 if (q == 'public') {
                     XeonBotInc.public = true
                     replygcxeon(mess.done)
-                } else if (q == 'self') {
+                } else if (q == 'private') {
                     XeonBotInc.public = false
                     replygcxeon(mess.done)
                 }
@@ -617,7 +617,7 @@ senddocu(buffer)
             case 'leave':
                 if (!isCreator) return replygcxeon(mess.owner)
                 if (!m.isGroup) return replygcxeon(mess.group)
-                replygcxeon('Bye Everyone 🥺')
+                replygcxeon('Bye Everyone, my owner Tristan kicked me out 😔🥺')
                 await XeonBotInc.groupLeave(m.chat)
                 break
             case 'backup':
@@ -650,9 +650,9 @@ senddocu(buffer)
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: 'Broadcast By Tech God',
+                                title: 'Broadcast By Tristan',
                                 body: `Sent ${i.length} Group`,
-                                thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                                thumbnailUrl: 'https://ibb.co/FJWd68j',
                                 sourceUrl: global.link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -960,7 +960,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${latensi.toFixed(4)} Second`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            thumbnailUrl: 'https://ibb.co/FJWd68j',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -974,7 +974,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'buypremium':
             case 'buyprem':
             case 'premium': {
-                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with the Tech God wa.me/917466008456 😉`
+                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with Tristan wa.me/27634624586 😉`
                 await XeonBotInc.sendMessage(m.chat, {
                     text: teks,
                     contextInfo: {
@@ -982,7 +982,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                             showAdAttribution: true,
                             title: `${botname}`,
                             body: `${ownername}`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            thumbnailUrl: 'https://ibb.co/FJWd68j',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -994,15 +994,15 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             break
             case 'runtime':
-                let runtimetext = `Bots Have Been Running For ${runtime(process.uptime())}`
+                let runtimetext = `Bot Have Been Running For ${runtime(process.uptime())}`
                 XeonBotInc.sendMessage(m.chat, {
                     text: runtimetext,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
-                            body: `youtube Tech God`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            body: `©Created by Tristan®`,
+                            thumbnailUrl: 'https://ibb.co/FJWd68j',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -1016,14 +1016,14 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'script':
             case 'repo':
                 XeonBotInc.sendMessage(m.chat, {
-                    text: `repo https://github.com/techgod143/TECH-GOD-BUG-BOT
-		    youtube www.youtube.com/@techgod143`,
+                    text: `repo https://github.com/tristan7122/TRISTAN-BOT=BUG
+		    wa.me/27634624586`,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
-                            body: `SCRIPT OF ${botname} is on YouTube www.youtube.com/@techgod143`,
-                            thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                            body: `SCRIPT OF ${botname} is on WA:wa.me/27634624586`,
+                            thumbnailUrl: 'https://ibb.co/FJWd68j',
                             sourceUrl: global.link,
                             mediaType: 1,
                             renderLargerThumbnail: true
@@ -2476,8 +2476,8 @@ break
 ┃❁ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
 ┃❁ *User:* ${pushname}
 ╰┈➤ ${xeonytimewisher} 😄  My bro/my sis
-⚠️~Don't forget to follow me🥺~ 
-*TRISTAN* ~Instagram~ :Tristany71
+⚠️Don't forget to follow me🥺
+*TRISTAN* Instagram:Tristany71
 _Any help: WA:Message Tristan on WhatsApp. https://wa.me/message/WSXHC2GN47OGI1
 ╰═════════════════⊷
 ╭═══❂ 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨 ❂
@@ -2624,7 +2624,7 @@ if (typemenu === 'v1') {
                             externalAdReply: {
                                 title: botname,
                                 body: ownername,
-                                thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+                                thumbnailUrl: 'https://ibb.co/FJWd68j',
                                 sourceUrl: link,
                                 mediaType: 1,
                                 renderLargerThumbnail: true
@@ -2642,7 +2642,7 @@ if (typemenu === 'v1') {
       externalAdReply: {
       title: botname,
       body: ownername,
-      thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
+      thumbnailUrl: 'https://ibb.co/FJWd68j',
       sourceUrl: ``,
       mediaType: 1,
       renderLargerThumbnail: true
