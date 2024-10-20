@@ -2458,7 +2458,7 @@ const xeonybug1 = `${xeontext1}`
 var scheduledCallCreationMessage = generateWAMessageFromContent(from, proto.Message.fromObject({
 "scheduledCallCreationMessage": {
 "callType": "2",
-"scheduledTimestampMs": `${moment(1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`,
+"scheduledTimestampMs": `${moment(1000).tz("Africa/Johannesburg").format("DD/MM/YYYY HH:mm:ss")}`,
 "title": xeonybug1,
 }
 }), { userJid: from, quoted : m})
@@ -2471,14 +2471,14 @@ break
             case 'menu':
             case 'help':
             case 'alive':
-                let xeonmenuoh = `╭══ *❍ 𝗧𝗘𝗖𝗛_𝗚𝗢𝗗-BUG_BOT ❍*
-┃❁ *ᴏᴡɴᴇʀ:* ᴛᴇᴄʜ ○■□● ɢᴏᴅ
+                let xeonmenuoh = `╭══ *❍ 𝗧RISTAN-BOT=BUG ❍*
+┃❁ *ᴏᴡɴᴇʀ:* ᴛristan ○■□●
 ┃❁ *ᴜᴘᴛɪᴍᴇ:* ${runtime(process.uptime())}
 ┃❁ *User:* ${pushname}
-╰┈➤ ${xeonytimewisher} 😄  My bro
-⚠️⚠️ ~Don't forget to subscribe~ 
-*Tech god* ~Youtube Channel~ ⚠️⚠️
-_Any help: yt link http://www.youtube.com/@techgod143_
+╰┈➤ ${xeonytimewisher} 😄  My bro/my sis
+⚠️~Don't forget to follow me🥺~ 
+*TRISTAN* ~Instagram~ :Tristany71
+_Any help: WA:Message Tristan on WhatsApp. https://wa.me/message/WSXHC2GN47OGI1
 ╰═════════════════⊷
 ╭═══❂ 𝗕𝗨𝗚 𝗠𝗘𝗡𝗨 ❂
 ┃ ❏ *xʀᴇᴀᴄᴛ <ʀᴇᴘʟʏ ᴄʜᴀᴛ>*
@@ -2563,7 +2563,7 @@ _Any help: yt link http://www.youtube.com/@techgod143_
 ┃ ❏ *ᴍᴇɴᴜ*
 ┃ ❏ *ʜᴇʟᴘ*
 ┃ ❏ *ʟɪsᴛ*
-┃ ❏ *ʙᴜʏᴘʀᴇᴍɪᴜᴍ +917466008456*
+┃ ❏ *ʙᴜʏᴘʀᴇᴍɪᴜᴍ +27634624586*
 ┃ ❏ *ʀᴜɴᴛɪᴍᴇ*
 ┃ ❏ *sᴄʀɪᴘᴛ*
 ┃ ❏ *ᴅᴏɴᴀᴛᴇ*
