@@ -29,7 +29,7 @@ global.themeemoji = '🎭'
 global.wm = "Youtube Tistany71"
 
 //theme link
-global.link = 'https://chat.whatsapp.com/Imupernn9cZL6seHgCewL5'
+global.link = 'https://chat.whatsapp.com/FQzh4KLDktPHXJGXLy54u9'
 
 //custom prefix
 global.prefa = ['','!','.','#','&']
